@@ -1,0 +1,27 @@
+node* swap_nodes(node *head,int i,int j)
+{
+    int count=0,count1=0;
+    node* trav=head;
+    node* trav1=head;
+    while(trav!=NULL)
+    {
+        if(count==i)
+        {
+            break;
+        }
+        count++;
+        trav=trav->next;
+    }
+    while(trav1!=NULL)
+    {
+        if(count1==j)
+        {
+            break;
+        }
+        count1++;
+        trav1=trav1->next;
+    }
+    swap(trav->data,trav1->data);
+    return head;
+
+}

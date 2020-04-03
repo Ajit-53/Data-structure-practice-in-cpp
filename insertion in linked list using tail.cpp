@@ -36,6 +36,7 @@ Node* add()
     return head;
 }
 
+
 void print(Node* head)
 {
    if(head==NULL)
@@ -57,6 +58,7 @@ int main()
     Node *head=NULL;
 
    head=add();
+ //  sort(head.begin(),head.end());
    print(head);
     return 0;
 }
